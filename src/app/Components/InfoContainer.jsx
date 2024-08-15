@@ -122,7 +122,7 @@ const ExampleContent = () => (
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
         In 2010, one of our core team members recognized the crucial need to
         promote physical education at the grassroots level. They understood that
-        the health and wellness of future generations begin with today's
+        the health and wellness of future generations begin with today&apos;s
         students. This realization led to the founding of our organization, with
         the aim of assessing the current state of physical education and sports
         in India.
