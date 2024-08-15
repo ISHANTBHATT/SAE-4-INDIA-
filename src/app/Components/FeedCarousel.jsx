@@ -88,7 +88,7 @@ const FeedCarousel = () => {
       {/* <div className="bg-[#f8f8f8]"> */}
       <Slider {...settings} className="">
         {feeddata.map((e) => (
-          <FeedCard video={e.video} title={e.title} desc={e.desc} />
+          <FeedCard key={e.id} video={e.video} title={e.title} desc={e.desc} />
         ))}
       </Slider>
       {/* </div> */}
