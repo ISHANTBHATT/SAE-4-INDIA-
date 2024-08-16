@@ -46,7 +46,7 @@ const HomeCard = ({ key, title, img }) => {
         className="px-4 lg:px-4 py-20 flex-1 flex flex-col   z-[1] absolute left-0 bottom-10"
       >
         <motion.p className="text-[50px] sm:text-[100px]  lg:text-[100px] font-extrabold text-white w-full font-harlow">
-          Let's Play
+          Let&apos;s Play
         </motion.p>
         <motion.p
           key={title}
