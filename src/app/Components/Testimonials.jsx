@@ -245,12 +245,12 @@ import {
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 const partnersdata = [
-  { logo: "../Streetracket_Logo2.png", name: "Streetracket" },
-  { logo: "../Tipsarevic_logo.png", name: "Tipsarevic" },
-  { logo: "../Top_tennis_academy.png", name: "Top tennis academy" },
-  { logo: "../tenalis_sports.png", name: "Tenalis sports" },
-  { logo: "../speedball.png", name: "Speedball" },
-  { logo: "../yellowfields_logo.png", name: "Yellow Fields" },
+  { id: "1", logo: "../Streetracket_Logo2.png", name: "Streetracket" },
+  { id: "2", logo: "../Tipsarevic_logo.png", name: "Tipsarevic" },
+  { id: "3", logo: "../Top_tennis_academy.png", name: "Top tennis academy" },
+  { id: "4", logo: "../tenalis_sports.png", name: "Tenalis sports" },
+  { id: "5", logo: "../speedball.png", name: "Speedball" },
+  { id: "6", logo: "../yellowfields_logo.png", name: "Yellow Fields" },
 ];
 
 function ParallaxText({ children, baseVelocity = 100 }) {
@@ -307,7 +307,7 @@ export default function App() {
       <ParallaxText baseVelocity={-2}>
         <div className="flex gap-14">
           {partnersdata.map((partner) => (
-            <div className="w-40 h-44 flex items-center">
+            <div key={partner.id} className="w-40 h-44 flex items-center">
               <img src={partner.logo} className="" />
             </div>
           ))}
