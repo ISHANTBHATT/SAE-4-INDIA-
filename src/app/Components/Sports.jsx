@@ -102,22 +102,28 @@ function Sports() {
         <p className="text-7xl font-extrabold ">Sports</p>
         <div className="w-full  ">
           {currentSport ? (
-            <motion.div
-              variants={fadeIn("left", 0.2)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-              className=" flex "
-            >
-              <img
+            <div className=" flex ">
+              <motion.img
+                key={currentSport.id}
+                variants={fadeIn("left", 0.2)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
                 src={currentSport.icon}
                 alt={`${currentSport.name} icon`}
                 className="w-96 h-96"
               />
-              <p className=" text-neutral-600 flex items-center ">
+              <motion.p
+                key={currentSport.id}
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                className=" text-neutral-600 flex items-center text-justify"
+              >
                 {currentSport.desc}
-              </p>
-            </motion.div>
+              </motion.p>
+            </div>
           ) : (
             // <img src="../defaulticon.jpg" alt="Default icon" />
             <motion.div
@@ -126,7 +132,7 @@ function Sports() {
               animate="show"
               exit="hidden"
             >
-              <p className="m-auto text-neutral-600 w-[500px] ">
+              <p className="m-auto text-neutral-600 w-[500px] text-justify">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the 1500s, when an unknown printer took a
@@ -136,7 +142,7 @@ function Sports() {
                 dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen book.
               </p>
-              <p className="py-10 m-auto text-neutral-600 w-[500px] ">
+              <p className="py-10 m-auto text-neutral-600 w-[500px] text-justify">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the 1500s, when an unknown printer took a
