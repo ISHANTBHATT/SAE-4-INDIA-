@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import HomeCard from "./HomeCard";
 
 const carouseldata = [
-  { id: "1", img: "../basketball.jpg", name: "BASKETALL" },
+  { id: "1", img: "../basketball.jpg", name: "BASKETBALL" },
   { id: "2", img: "../tennis6.jpg", name: "TENNIS" },
   { id: "3", img: "../taekwondo.jpg", name: "TAEKWONDO" },
 ];

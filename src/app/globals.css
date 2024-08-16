@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
+@font-face {
+  font-family: 'Harlow Solid Italic';
+  src: url('/fonts/HarlowSolidItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: normal;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

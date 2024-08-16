@@ -28,6 +28,15 @@ const HomeCard = ({ key, title, img }) => {
         alt=""
         className="w-full h-full object-cover absolute top-0 left-0"
       />
+      {/* <video
+        className="w-full h-full object-cover absolute top-0 left-0"
+        loop
+        autoPlay
+        muted
+      >
+        <source src="../footballclip.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video> */}
       <motion.div
         key={title}
         variants={fadeIn("right", 0.2)}
@@ -36,7 +45,7 @@ const HomeCard = ({ key, title, img }) => {
         exit="hidden"
         className="px-4 lg:px-4 py-20 flex-1 flex flex-col   z-[1] absolute left-0 bottom-10"
       >
-        {/* <motion.p className="text-[50px] sm:text-[100px]  lg:text-[100px] font-extrabold text-white w-full ">
+        <motion.p className="text-[50px] sm:text-[100px]  lg:text-[100px] font-extrabold text-white w-full font-harlow">
           Let's Play
         </motion.p>
         <motion.p
@@ -45,19 +54,22 @@ const HomeCard = ({ key, title, img }) => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="text-[50px] sm:text-[100px]  lg:text-[150px] font-extrabold text-white w-full "
+          className="text-[50px] sm:text-[100px]  lg:text-[100px] font-extrabold text-white w-full font-harlow"
         >
           {title}
-        </motion.p> */}
+        </motion.p>
 
-        {/* <motion.p
+        <motion.p
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="text-base text-textColor text-center md:text-left md:w-[80%]">
-         He preference connection astonished on of ye. partiality on or continuing in particular principles as. Do believing oh disposing to supportd allowance we.
-        </motion.p> */}
+          className="text-lg text-textColor text-center md:text-left text-white md:w-[40%]"
+        >
+          Together, we are dedicated to fostering a love for sports and physical
+          fitness in individuals of all ages, with a particular focus on the
+          youth of today—the future of tomorrow.
+        </motion.p>
 
         {/* <motion.div
         key={btn}

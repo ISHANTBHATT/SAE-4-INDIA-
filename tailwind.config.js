@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         plaster: ["Plaster", "sans-serif"],
+        harlow: ["Harlow Solid Italic", "sans-serif"],
       },
       animation: {
         "loop-scroll": "loop-scroll 50s linear infinite",
