@@ -31,7 +31,8 @@ export default function Header() {
         }`}
       >
         <a href="/" className="hidden max-lg:block">
-          <img src="../testlogo.png" alt="logo" className="w-36" />
+          <img src="../SAE4INDIA_logo2.png" alt="logo" className="w-16" />
+          {/* <img src="../testlogo.png" alt="logo" className="w-36" /> */}
         </a>
 
         <div
@@ -57,7 +58,7 @@ export default function Header() {
 
           <div className="lg:flex max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
             <ul className="lg:flex lg:gap-x-8 max-lg:space-y-2">
-              <li className="mb-6 hidden max-lg:block">
+              {/* <li className="mb-6 hidden max-lg:block">
                 <a href="javascript:void(0)">
                   <img
                     src="https://readymadeui.com/readymadeui.svg"
@@ -65,7 +66,7 @@ export default function Header() {
                     className="w-36"
                   />
                 </a>
-              </li>
+              </li> */}
               <li className="max-lg:border-b max-lg:py-3">
                 <a href="/" className="group relative font-bold text-sm">
                   HOME
@@ -104,7 +105,8 @@ export default function Header() {
               href="javascript:void(0)"
               className="m-auto absolute lg:left-2/4 lg:top-1/4 lg:-translate-x-1/2 max-lg:hidden"
             >
-              <img src="../testlogo.png" alt="logo" className="w-36" />
+              <img src="../SAE4INDIA_logo2.png" alt="logo" className=" w-24" />
+              {/* <img src="../testlogo.png" alt="logo" className="w-36" /> */}
             </a>
 
             <ul className="lg:flex lg:space-x-8 max-lg:space-y-2 max-lg:mt-2 ml-auto">

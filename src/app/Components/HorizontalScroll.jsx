@@ -67,27 +67,27 @@ export default HorizontalScroll;
 
 const cards = [
   {
-    url: "",
+    url: "../Honesty.jpeg",
     title: "Honesty",
     id: 1,
   },
   {
-    url: "/imgs/abstract/2.jpg",
+    url: "../Learning.jpeg",
     title: "Learning",
     id: 2,
   },
   {
-    url: "/imgs/abstract/3.jpg",
+    url: "../Relationships.jpeg",
     title: "Relationships",
     id: 3,
   },
   {
-    url: "/imgs/abstract/4.jpg",
+    url: "../Respect.jpeg",
     title: "Respect",
     id: 4,
   },
   {
-    url: "/imgs/abstract/5.jpg",
+    url: "../Commitment.jpeg",
     title: "Commitment",
     id: 5,
   },

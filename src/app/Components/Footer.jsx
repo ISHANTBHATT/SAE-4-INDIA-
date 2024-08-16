@@ -12,7 +12,12 @@ function Footer() {
         <div class="md:flex md:justify-between md:gap-10 xl:gap-24">
           <div className="mb-6 md:mb-0 ">
             <a href="../" class="flex justify-center">
-              <img src="../testlogo.png" class="h-12 me-3 mt-10" alt="Logo" />
+              {/* <img src="../testlogo.png" class="h-12 me-3 mt-10" alt="Logo" /> */}
+              <img
+                src="../SAE4INDIA_logo2.png"
+                class="h-24 me-3 mt-10"
+                alt="Logo"
+              />
             </a>
             <p class="self-center text-sm mt-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -150,8 +155,8 @@ function Footer() {
         <div class="sm:flex sm:items-center sm:justify-between text-center">
           <span class="text-sm text-gray-500 sm:text-center">
             Copyright © 2024{" "}
-            <a href="https://www.finchamindia.com/" class="hover:underline">
-              LoremIpsum |
+            <a href="" class="hover:underline">
+              Sports And Education For India |
             </a>{" "}
             Website Developed By{" "}
             <a href="https://apacedigitalcargo.com/" class="hover:underline">

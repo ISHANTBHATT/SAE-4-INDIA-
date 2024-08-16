@@ -13,8 +13,8 @@ function SportsCard({ key, name, img, onHover }) {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        onMouseEnter={() => onHover(name)}
-        onMouseLeave={() => onHover(null)}
+        // onMouseEnter={() => onHover(name)}
+        // onMouseLeave={() => onHover(null)}
       >
         <p1 className="text-white font-bold text-2xl">{name}</p1>
       </div>
