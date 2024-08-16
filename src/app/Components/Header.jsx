@@ -31,7 +31,7 @@ export default function Header() {
         }`}
       >
         <a href="/" className="hidden max-lg:block">
-          <img src="../SAE4INDIA_logo2.png" alt="logo" className="w-16" />
+          <img src="../SAE4INDIA_logo3.png" alt="logo" className="w-16" />
           {/* <img src="../testlogo.png" alt="logo" className="w-36" /> */}
         </a>
 
@@ -105,7 +105,7 @@ export default function Header() {
               href="javascript:void(0)"
               className="m-auto absolute lg:left-2/4 lg:top-1/4 lg:-translate-x-1/2 max-lg:hidden"
             >
-              <img src="../SAE4INDIA_logo2.png" alt="logo" className=" w-24" />
+              <img src="../SAE4INDIA_logo3.png" alt="logo" className=" w-24" />
               {/* <img src="../testlogo.png" alt="logo" className="w-36" /> */}
             </a>
 

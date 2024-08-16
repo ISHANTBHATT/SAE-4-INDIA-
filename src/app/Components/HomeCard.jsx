@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, useInView, useScroll } from "framer-motion";
 import { fadeIn } from "../../../variants";
+import Img from "next/image";
 const HomeCard = ({ key, title, img }) => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -19,7 +20,7 @@ const HomeCard = ({ key, title, img }) => {
           <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-14 w-14"></div>
         </div>
       )}
-      <motion.img
+      {/* <motion.img
         variants={fadeIn("up", 0.1)}
         initial="hidden"
         animate="show"
@@ -27,7 +28,7 @@ const HomeCard = ({ key, title, img }) => {
         src={img}
         alt=""
         className="w-full h-full object-cover absolute top-0 left-0"
-      />
+      /> */}
       {/* <video
         className="w-full h-full object-cover absolute top-0 left-0"
         loop
@@ -38,19 +39,35 @@ const HomeCard = ({ key, title, img }) => {
         Your browser does not support the video tag.
       </video> */}
       <motion.div
-        key={title}
-        variants={fadeIn("right", 0.2)}
+        key={img}
+        variants={fadeIn("up", 0.1)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="px-4 lg:px-4 py-20 flex-1 flex flex-col   z-[1] absolute left-0 bottom-10"
+        className="w-full h-full absolute top-0 left-0"
       >
-        <motion.p className="text-[50px] sm:text-[100px]  lg:text-[100px] font-extrabold text-white w-full font-harlow">
+        <Img
+          src={img}
+          alt=""
+          layout="fill"
+          objectFit="cover"
+          className="w-full h-full"
+        />
+      </motion.div>
+      <div className="px-4 lg:px-4 py-20 flex-1 flex flex-col   z-[1] absolute left-0 bottom-10">
+        <motion.p
+          key={title}
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="text-[50px] sm:text-[100px]  lg:text-[100px] font-extrabold text-white w-full font-harlow"
+        >
           Let&apos;s Play
         </motion.p>
         <motion.p
           key={title}
-          variants={fadeIn("right", 0.8)}
+          variants={fadeIn("right", 0.6)}
           initial="hidden"
           animate="show"
           exit="hidden"
@@ -60,6 +77,7 @@ const HomeCard = ({ key, title, img }) => {
         </motion.p>
 
         <motion.p
+          key={key}
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           animate="show"
@@ -88,7 +106,7 @@ const HomeCard = ({ key, title, img }) => {
         </button>
         
         </motion.div> */}
-      </motion.div>
+      </div>
       {/* <div className='justify-center items-center py-2 md:py-10 w-1/2 h-full hidden md:flex '>
 
       </div> */}
