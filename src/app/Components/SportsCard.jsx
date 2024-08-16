@@ -6,7 +6,7 @@ function SportsCard({ key, name, img, onHover }) {
   return (
     <div className="w-full flex justify-center md:justify-end ">
       <div
-        className="w-[80%]  rounded-s-2xl rounded-e-2xl md:rounded-e-none  py-12 pl-10 hover:w-[85%] transition-all duration-500 ease-in-out bg-cover bg-center bg-no-repeat grayscale hover:grayscale-0 "
+        className="w-[80%]  rounded-s-2xl rounded-e-2xl md:rounded-e-none  py-12 pl-10 hover:w-[85%] transition-all duration-500 ease-in-out bg-cover bg-center bg-no-repeat grayscale hover:grayscale-0 bg-black"
         style={{
           backgroundImage: `url(${img})`,
           backgroundSize: "cover",

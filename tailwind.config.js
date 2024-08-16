@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        plaster: ["Plaster", "sans-serif"],
+      },
       animation: {
         "loop-scroll": "loop-scroll 50s linear infinite",
       },

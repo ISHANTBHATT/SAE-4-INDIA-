@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../variants";
 import SportsCard from "./SportsCard";
 
 const sportsdata = [
@@ -95,12 +97,18 @@ function Sports() {
   const currentSport = sportsdata.find((sport) => sport.name === hoveredSport);
   return (
     <div className="w-full h-full flex bg-white py-10">
-      <div className="hidden md:flex flex-col flex-1 justify-center items-center">
+      <div className="hidden md:flex flex-col flex-1 mt-20 items-center gap-10">
         {/* <div className=""> */}
-        <p className="text-7xl font-extrabold">Sports</p>
-        <div className="w-full ">
+        <p className="text-7xl font-extrabold ">Sports</p>
+        <div className="w-full  ">
           {currentSport ? (
-            <div className="pt-10 flex ">
+            <motion.div
+              variants={fadeIn("left", 0.2)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className=" flex "
+            >
               <img
                 src={currentSport.icon}
                 alt={`${currentSport.name} icon`}
@@ -109,11 +117,16 @@ function Sports() {
               <p className=" text-neutral-600 flex items-center ">
                 {currentSport.desc}
               </p>
-            </div>
+            </motion.div>
           ) : (
             // <img src="../defaulticon.jpg" alt="Default icon" />
-            <div>
-              <p className="pt-10 m-auto text-neutral-600 w-[500px] ">
+            <motion.div
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+            >
+              <p className="m-auto text-neutral-600 w-[500px] ">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the 1500s, when an unknown printer took a
@@ -129,7 +142,7 @@ function Sports() {
                 dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen book.
               </p>
-            </div>
+            </motion.div>
           )}
         </div>
         {/* </div> */}

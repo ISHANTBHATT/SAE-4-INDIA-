@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="popLayout">
           <Header />
           {/* <Transition /> */}
           <motion.div key={router.route} className="h-full w-full">

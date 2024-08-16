@@ -30,7 +30,7 @@ function Testimonials() {
           <div className="w-40 h-40 pt-4">
             <img
               loading="lazy"
-              src="../Top_tennis_academy.png"
+              src="../Top_tennis_academy2.png"
               className=""
               alt="Image 1"
             />
@@ -159,7 +159,7 @@ function Testimonials() {
           <div className="w-40 h-40 pt-4">
             <img
               loading="lazy"
-              src="../Top_tennis_academy.png"
+              src="../Top_tennis_academy2.png"
               className=""
               alt="Image 1"
             />
@@ -208,3 +208,118 @@ function Testimonials() {
 }
 
 export default Testimonials;
+
+// import React from "react";
+// const partnersdata = [
+//   { logo: "../Streetracket_Logo2.png", name: "Streetracket" },
+//   { logo: "../Tipsarevic_logo.png", name: "Tipsarevic" },
+//   { logo: "../Top_tennis_academy.png", name: "Top tennis academy" },
+//   { logo: "../tenalis_sports.png", name: "Tenalis sports" },
+//   { logo: "../speedball.png", name: "Speedball" },
+//   { logo: "../yellowfields_logo.png", name: "Yellow Fields" },
+// ];
+// function Testimonials() {
+//   return (
+//     <div className="w-full h-full flex flex-wrap gap-8 justify-around">
+//       {partnersdata.map((partner) => (
+//         <div className="w-40 h-40">
+//           <img src={partner.logo} className="" />
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
+
+// export default Testimonials;
+
+// "use client";
+// import { useRef } from "react";
+// import {
+//   motion,
+//   useScroll,
+//   useSpring,
+//   useTransform,
+//   useMotionValue,
+//   useVelocity,
+//   useAnimationFrame,
+// } from "framer-motion";
+// import { wrap } from "@motionone/utils";
+// const partnersdata = [
+//   { logo: "../Streetracket_Logo2.png", name: "Streetracket" },
+//   { logo: "../Tipsarevic_logo.png", name: "Tipsarevic" },
+//   { logo: "../Top_tennis_academy.png", name: "Top tennis academy" },
+//   { logo: "../tenalis_sports.png", name: "Tenalis sports" },
+//   { logo: "../speedball.png", name: "Speedball" },
+//   { logo: "../yellowfields_logo.png", name: "Yellow Fields" },
+// ];
+
+// function ParallaxText({ children, baseVelocity = 100 }) {
+//   const baseX = useMotionValue(0);
+//   const { scrollY } = useScroll();
+//   const scrollVelocity = useVelocity(scrollY);
+//   const smoothVelocity = useSpring(scrollVelocity, {
+//     damping: 50,
+//     stiffness: 400,
+//   });
+//   const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+//     clamp: false,
+//   });
+
+//   const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+
+//   const directionFactor = useRef(1);
+//   useAnimationFrame((t, delta) => {
+//     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
+
+//     if (velocityFactor.get() < 0) {
+//       directionFactor.current = -1;
+//     } else if (velocityFactor.get() > 0) {
+//       directionFactor.current = 1;
+//     }
+
+//     moveBy += directionFactor.current * moveBy * velocityFactor.get();
+
+//     baseX.set(baseX.get() + moveBy);
+//   });
+
+//   return (
+//     <div className="parallax parallax overflow-hidden tracking-[-2px] leading-[0.8] m-0 whitespace-nowrap flex flex-nowrap">
+//       <motion.div
+//         className="scroller scroller font-semibold uppercase text-[64px] flex whitespace-nowrap flex-nowrap font-plaster text-primary"
+//         style={{
+//           x,
+//           fontStyle: "normal",
+//           WebkitFontSmoothing: "antialiased",
+//         }}
+//       >
+//         <span className="block mr-[50px]">{children} </span>
+//         <span className="block mr-[50px]">{children} </span>
+//         <span className="block mr-[50px]">{children} </span>
+//         <span className="block mr-[50px]">{children} </span>
+//       </motion.div>
+//     </div>
+//   );
+// }
+
+// export default function App() {
+//   return (
+//     <section>
+//       <ParallaxText baseVelocity={-5}>
+//         <div className="flex gap-14">
+//           {partnersdata.map((partner) => (
+//             <div className="w-40 h-44">
+//               <img src={partner.logo} className="" />
+//             </div>
+//           ))}
+//         </div>
+//       </ParallaxText>
+//       {/* <ParallaxText baseVelocity={1}>
+//         <div className="flex gap-10">
+//           {partnersdata.map((partner) => (
+//             <span>{partner.name}</span>
+//           ))}
+//         </div>
+//       </ParallaxText> */}
+//     </section>
+//   );
+// }
