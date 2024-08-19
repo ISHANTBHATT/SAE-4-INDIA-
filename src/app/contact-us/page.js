@@ -121,7 +121,10 @@ function Page() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           {contactdata.map((d) => (
-            <div className="flex flex-col p-8 rounded-md shadow-md text-left bg-zinc-900 border border-zinc-700 hover:bg-zinc-950">
+            <div
+              key={d.id}
+              className="flex flex-col p-8 rounded-md shadow-md text-left bg-zinc-900 border border-zinc-700 hover:bg-zinc-950"
+            >
               <div className=" flex border-2 w-10 h-10 border-gray-100 rounded-lg justify-center items-center">
                 {d.icon && <d.icon className="w-8 h-8" />}
               </div>
@@ -142,7 +145,10 @@ function Page() {
         </h2>
         <div className="px-40">
           {faqdata.map((e) => (
-            <div className="bg-zinc-900 rounded-md p-6 mt-4  shadow-md border border-zinc-700">
+            <div
+              key={e.id}
+              className="bg-zinc-900 rounded-md p-6 mt-4  shadow-md border border-zinc-700"
+            >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
                   {/* <Image
