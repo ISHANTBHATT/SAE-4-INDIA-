@@ -75,7 +75,7 @@ export default function Header() {
               </li>
               <li className="max-lg:border-b max-lg:py-3">
                 <a
-                  href="javascript:void(0)"
+                  href="../about-us"
                   className="group relative font-bold text-sm"
                 >
                   ABOUT
@@ -130,7 +130,7 @@ export default function Header() {
               </li>
               <li className="max-lg:py-3 relative">
                 <a
-                  href="javascript:void(0)"
+                  href="../contact-us"
                   className="group relative font-bold text-sm"
                 >
                   CONTACT US
