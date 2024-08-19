@@ -119,7 +119,6 @@ import Testimonials from "./Components/Testimonials";
 import InfoContainer from "./Components/InfoContainer";
 import FeedCard from "./Components/FeedCard";
 import FeedCarousel from "./Components/FeedCarousel";
-import Testdiv from "./Components/Testdiv";
 export default function page() {
   return (
     <main className="w-full min-h-screen mb-10">
