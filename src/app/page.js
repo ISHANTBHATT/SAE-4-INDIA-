@@ -111,13 +111,13 @@
 //     </main>
 //   );
 // }
+"use client";
 import Image from "next/image";
 import Home from "./Components/Home";
 import Sports from "./Components/Sports";
 import HomeCarousel from "./Components/HomeCarousel";
 import Testimonials from "./Components/Testimonials";
 import InfoContainer from "./Components/InfoContainer";
-import FeedCard from "./Components/FeedCard";
 import FeedCarousel from "./Components/FeedCarousel";
 export default function page() {
   return (
@@ -126,9 +126,6 @@ export default function page() {
       <Sports />
       <InfoContainer />
       <FeedCarousel />
-      <div className="flex-col justify-center text-center py-10">
-        <h1 className="text-5xl text-textcolor font-bold">OUR PARTNERS</h1>
-      </div>
       <Testimonials />
     </main>
   );

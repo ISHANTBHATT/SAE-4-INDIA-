@@ -304,6 +304,9 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export default function App() {
   return (
     <section>
+      <div className="flex-col justify-center text-center py-10">
+        <h1 className="text-5xl text-textcolor font-bold">OUR PARTNERS</h1>
+      </div>
       <ParallaxText baseVelocity={-2}>
         <div className="flex gap-14">
           {partnersdata.map((partner) => (
