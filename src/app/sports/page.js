@@ -35,7 +35,7 @@ export default function SmoothScrollHero() {
 
 const Nav = () => {
   return (
-    <nav className="fixed  right-0 top-10 z-50 flex items-center justify-between px-6 py-3 text-white">
+    <nav className="fixed  right-0 top-10 z-20 flex items-center justify-between px-6 py-3 text-white">
       {/* <SiSpacex className="text-3xl mix-blend-difference" /> */}
       <button
         onClick={() => {

@@ -21,7 +21,7 @@ function SportsCard({ key, name, img, onHover }) {
           alt={name}
           layout="fill"
           objectFit="cover"
-          className="absolute inset-0 rounded-s-2xl"
+          className="absolute inset-0 rounded-s-2xl rounded-e-2xl md:rounded-e-none "
         />
         <p1 className="text-white font-bold text-2xl relative z-10">{name}</p1>
       </div>

@@ -15,7 +15,7 @@ function Footer() {
               {/* <img src="../testlogo.png" class="h-12 me-3 mt-10" alt="Logo" /> */}
               <img
                 src="../SAE4INDIA_logo3.png"
-                class="h-24 me-3 mt-10"
+                class="h-28 me-3 mt-10"
                 alt="Logo"
               />
             </a>

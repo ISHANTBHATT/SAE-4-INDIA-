@@ -54,14 +54,14 @@ const HomeCard = ({ key, title, img }) => {
           className="w-full h-full"
         />
       </motion.div>
-      <div className="px-4 lg:px-4 py-20 flex-1 flex flex-col   z-[1] absolute left-0 bottom-10">
+      <div className="px-4 lg:px-4  py-0 lg:py-20 flex-1 flex flex-col z-[1] absolute left-0 bottom-10">
         <motion.p
           key={title}
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="text-[50px] sm:text-[100px]  lg:text-[100px] font-extrabold text-white w-full font-harlow"
+          className="text-[50px]  lg:text-[100px] font-extrabold text-white w-full font-harlow"
         >
           Let&apos;s Play
         </motion.p>
@@ -71,7 +71,7 @@ const HomeCard = ({ key, title, img }) => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="text-[50px] sm:text-[100px]  lg:text-[100px] font-extrabold text-white w-full font-harlow"
+          className="text-[50px]  lg:text-[100px] font-extrabold text-white w-full font-harlow"
         >
           {title}
         </motion.p>
@@ -82,7 +82,7 @@ const HomeCard = ({ key, title, img }) => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="text-lg text-textColor text-center md:text-left text-white md:w-[40%]"
+          className="text-sm md:text-lg text-textColor text-left text-white w-[50%] md:w-[40%]"
         >
           Together, we are dedicated to fostering a love for sports and physical
           fitness in individuals of all ages, with a particular focus on the

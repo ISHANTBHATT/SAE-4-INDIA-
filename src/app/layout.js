@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <AnimatePresence mode="popLayout">
           <Header />
-          {/* <Transition /> */}
+          <Transition />
           <motion.div key={router.route} className="h-full w-full">
             {children}
           </motion.div>
