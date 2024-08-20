@@ -166,7 +166,9 @@ Coaching programs are designed to:
     Icon: "../Tour_icon.png",
     imgSrc: "../Fusion_Spexun.jpg",
     description: `FUSION SPEXUN: A Comprehensive Program for Aspiring Athletes and Scholars. FUSION SPEXUN is a uniquely designed program that blends world-class sports training with enriching cultural experiences and academic exploration. It offers a holistic approach to developing not only athletic skills but also a broader understanding of the world and one’s future academic path.
+
 Key Elements of FUSION SPEXUN:
+
 	1. International Sports Training Camps:
 	   - Global Partnerships: Athletes have the chance to train in premier sports facilities located in Bulgaria, Italy, 
           Switzerland, the UK, the Czech Republic, and Poland.
@@ -174,11 +176,13 @@ Key Elements of FUSION SPEXUN:
           enhance their skills and prepare for high-level competition.
 	   - International Exposure: Participants engage with peers from around the world, gaining valuable experience in 
           different playing environments and cultural contexts.
+
 	2. Cultural and Excursion Tour:
 	   - Cultural Immersion: The program includes carefully planned excursions that allow participants to experience the 
           rich cultural heritage, traditions, and natural beauty of the countries they visit.
 	   - Broader Perspectives: These tours aim to expand the participants' worldviews, fostering a deeper appreciation 
           of global diversity and promoting personal growth.
+
 	3. University Visits and Interactive Programs:
 	   - Academic Exploration: Athletes visit prestigious universities in each country, where they can explore various 
           academic programs and fields of study.
