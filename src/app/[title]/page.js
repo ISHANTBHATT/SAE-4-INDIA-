@@ -54,7 +54,10 @@ export default function TitlePage() {
           <div className="flex flex-col gap-4">
             <p className="text-xl">Playlist</p>
             {sortedfeed.map((e) => (
-              <div className="flex gap-2 bg-zinc-900 p-4 hover:bg-zinc-950 rounded-xl">
+              <div
+                key={e.id}
+                className="flex gap-2 bg-zinc-900 p-4 hover:bg-zinc-950 rounded-xl"
+              >
                 <video
                   key={e.video}
                   onClick={() => handleClick(e.title, e.id)}
