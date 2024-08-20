@@ -119,7 +119,7 @@ const ExampleContent = () => (
       Additional content explaining the above card here
     </h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-4 text-xl text-neutral-600 md:text-2xl text-justify">
         In 2010, one of our core team members recognized the crucial need to
         promote physical education at the grassroots level. They understood that
         the health and wellness of future generations begin with today&apos;s
@@ -127,10 +127,10 @@ const ExampleContent = () => (
         the aim of assessing the current state of physical education and sports
         in India.
       </p>
-      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-8 text-xl text-neutral-600 md:text-2xl text-justify">
         In 2011, we had the privilege of evaluating the physical education and
-        sports system under the prestigious banner of the **North Western
-        Countries Physical Education Association (NWCPEA)** and **UNESCO**—the
+        sports system under the prestigious banner of the North Western
+        Countries Physical Education Association (NWCPEA) and UNESCO — the
         United Nations Educational, Scientific, and Cultural Organization. This
         experience highlighted the urgent need for improvement in the existing
         physical education and sports systems within schools.
@@ -147,7 +147,7 @@ const ExampleContent2 = () => (
       Additional content explaining the above card here
     </h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-4 text-xl text-neutral-600 md:text-2xl text-justify">
         Our mission is to revolutionize physical education and sports in schools
         by providing innovative solutions and programs that inspire and empower
         students to lead healthier, more active lives. We believe that by
@@ -170,7 +170,7 @@ const ExampleContent3 = () => (
       Additional content explaining the above card here
     </h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-4 text-xl text-neutral-600 md:text-2xl text-justify">
         Our team is the heartbeat of our brand. We are more than just a
         company—we are a community of like-minded individuals who are committed
         to making a difference. Here are the values that guide us:

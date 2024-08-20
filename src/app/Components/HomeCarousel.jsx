@@ -33,12 +33,12 @@ const NextArrow = ({ onClick }) => {
     </button>
   );
 };
-const CustomDots = ({ dots }) => (
+const CustomDots = ({ dots, data }) => (
   <div className="custom-dots flex flex-col justify-center space-y-4 absolute right-4 bottom-20">
     {dots.map((dot, index) => (
       <a
         key={index}
-        className={`flex space-x-4 group relative hover:text-white font-bold ${
+        className={`flex space-x-4 justify-between group relative hover:text-white font-bold ${
           dot.props.className.includes("slick-active")
             ? "text-white"
             : "text-gray-600"
@@ -52,7 +52,7 @@ const CustomDots = ({ dots }) => (
               : "opacity-0 group-hover:opacity-100"
           } transition-opacity duration-300`}
         >
-          Title
+          {data[index].name}
         </p>
         <p>0{index + 1}</p>
         <span
@@ -79,7 +79,7 @@ function HomeCarousel() {
     swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 8000,
-    appendDots: (dots) => <CustomDots dots={dots} />,
+    appendDots: (dots) => <CustomDots dots={dots} data={carouseldata} />,
     // fade:true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
