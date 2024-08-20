@@ -22,13 +22,13 @@ const Page = () => {
           What We Do
         </h2>
 
-        <motion.button
+        {/* <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="whitespace-nowrap rounded-lg bg-zinc-800 px-4 py-2 font-medium text-white shadow-xl transition-colors hover:bg-zinc-900"
         >
           Learn more
-        </motion.button>
+        </motion.button> */}
       </div>
       <div className="px-10 py-8">
         <p className="">

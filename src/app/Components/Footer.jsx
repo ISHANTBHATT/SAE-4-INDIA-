@@ -39,22 +39,22 @@ function Footer() {
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary ">
-                  <a href="../membership" class="">
+                  <a href="../our-services" class="">
                     Services
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary ">
-                  <a href="#" class="">
+                  <a href="../sports" class="">
                     Sports
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary ">
-                  <a href="../events/upcoming" class="">
+                  <a href="../live-feed" class="">
                     Live Feed
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary ">
-                  <a href="../events/upcoming" class="">
+                  <a href="../contact-us" class="">
                     Contact Us
                   </a>
                 </li>
@@ -87,17 +87,17 @@ function Footer() {
               </h2>
               <ul class="text-gray-500 font-medium">
                 <li class="mb-4 hover:text-primary">
-                  <a href="/" class="">
+                  <a href="../our-services" class="">
                     Sports education program
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary">
-                  <a href="../about-us" class="">
+                  <a href="../our-services" class="">
                     Professional Coaching
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary">
-                  <a href="../membership" class="">
+                  <a href="../our-services" class="">
                     Fusion Spexun
                   </a>
                 </li>

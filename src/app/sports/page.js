@@ -11,6 +11,7 @@ import {
 import { SiSpacex } from "react-icons/si";
 import { FiArrowRight, FiMapPin } from "react-icons/fi";
 import { useRef } from "react";
+import Image from "next/image";
 
 export default function SmoothScrollHero() {
   return (
@@ -371,7 +372,29 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
           className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
           alt={`Image representing a link for ${heading}`}
         />
-
+        {/* <motion.div
+          style={{
+            top,
+            left,
+            translateX: "-50%",
+            translateY: "-50%",
+          }}
+          variants={{
+            initial: { scale: 0, rotate: "-12.5deg" },
+            whileHover: { scale: 1, rotate: "12.5deg" },
+          }}
+          transition={{ type: "spring" }}
+          className=" h-24 w-32 z-0 rounded-lg last:absolute  md:h-48 md:w-64"
+        >
+          <Image
+            src="/football.jpg"
+            layout="fill"
+            objectFit="cover"
+            // className="w-full h-full"
+            className="w-full h-full "
+            alt={`Image representing a link for ${heading}`}
+          />
+        </motion.div> */}
         <motion.div
           variants={{
             initial: {

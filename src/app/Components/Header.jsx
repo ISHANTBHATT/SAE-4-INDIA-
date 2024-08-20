@@ -84,7 +84,7 @@ export default function Header() {
               </li>
               <li className="max-lg:border-b max-lg:py-3">
                 <a
-                  href="javascript:void(0)"
+                  href="../our-services"
                   className="group relative font-bold text-sm"
                 >
                   SERVICES
@@ -121,7 +121,7 @@ export default function Header() {
               </li>
               <li className="max-lg:border-b max-lg:py-3">
                 <a
-                  href="javascript:void(0)"
+                  href="../live-feed"
                   className="group relative font-bold text-sm"
                 >
                   LIVE FEED
