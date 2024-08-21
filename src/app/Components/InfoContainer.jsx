@@ -115,9 +115,7 @@ const OverlayCopy = ({ subheading, heading }) => {
 
 const ExampleContent = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-      Additional content explaining the above card here
-    </h2>
+    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">Our Journey</h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl text-justify">
         In 2010, one of our core team members recognized the crucial need to
@@ -143,9 +141,7 @@ const ExampleContent = () => (
 );
 const ExampleContent2 = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-      Additional content explaining the above card here
-    </h2>
+    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">Our Mission</h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl text-justify">
         Our mission is to revolutionize physical education and sports in schools
@@ -166,9 +162,7 @@ const ExampleContent2 = () => (
 );
 const ExampleContent3 = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-      Additional content explaining the above card here
-    </h2>
+    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">Our Values</h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl text-justify">
         Our team is the heartbeat of our brand. We are more than just a

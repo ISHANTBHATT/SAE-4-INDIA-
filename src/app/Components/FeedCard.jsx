@@ -44,7 +44,7 @@ function FeedCard({
         <p class={`mb-3 font-normal text-gray-700 ${descColor}`}>
           {truncateText(desc, 120)}
         </p>
-        <a
+        {/* <a
           onClick={() => handleClick(title, id)}
           class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300 "
         >
@@ -64,7 +64,7 @@ function FeedCard({
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>
-        </a>
+        </a> */}
       </div>
     </div>
   );

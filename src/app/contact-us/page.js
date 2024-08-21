@@ -1,14 +1,3 @@
-// import React from 'react'
-
-// function Page() {
-//   return (
-//     <div className='py-20 px-10'>
-
-//     </div>
-//   )
-// }
-
-// export default Page
 // 2f2f2f
 "use client";
 import Head from "next/head";
@@ -20,34 +9,59 @@ import {
   IoCallOutline,
   IoChatbubblesOutline,
 } from "react-icons/io5";
+import { M_PLUS_1 } from "next/font/google";
 const contactdata = [
   {
-    id: "1",
+    id: 1,
     title: "Mail us",
     icon: TiMail,
     desc: "Speak to our friendly team.",
-    contact: "sales@untitledui.com",
+    contact: [
+      {
+        id: 1,
+        detail: "Info@sporteducationindia.com",
+        link: "mailto:Info@sporteducationindia.com",
+      },
+      {
+        id: 2,
+        detail: "Director@sporteducationindia.com",
+        link: "mailto:Director@sporteducationindia.com",
+      },
+      {
+        id: 3,
+        detail: "Fusion@sporteducationindia.com",
+        link: "mailto:Fusion@sporteducationindia.com",
+      },
+    ],
   },
+  // {
+  //   id: "2",
+  //   title: "Chat to support",
+  //   icon: IoChatbubblesOutline,
+  //   desc: "We're here to help.",
+  //   contact: [{id:1,detail:"Info@sporteducationindia.com"},
+  //     {id:2,detail:"Director@sporteducationindia.com"},
+  //     {id:3,detail:"Fusion@sporteducationindia.com"}],
+  // },
   {
-    id: "2",
-    title: "Chat to support",
-    icon: IoChatbubblesOutline,
-    desc: "We're here to help.",
-    contact: "support@untitledui.com",
-  },
-  {
-    id: "3",
+    id: 3,
     title: "Visit us",
     icon: IoLocationOutline,
-    desc: "Visit our office HQ.",
-    contact: "View on Google Maps",
+    desc: "Sports & Education for India 101, 1st Floor Centrum Plaza, Golf Course Road, Gurgaon – 122003, Haryana",
+    contact: [
+      {
+        id: 1,
+        detail: "View on Google Maps",
+        link: "https://www.google.com/maps/place/Sports+%26+Education+for+India/@28.4492975,77.095773,16.23z/data=!4m14!1m7!3m6!1s0x390d18b507b16751:0x69a0412e6b5efa91!2sSports+%26+Education+for+India!8m2!3d28.4492211!4d77.0997688!16s%2Fg%2F11s8_49tls!3m5!1s0x390d18b507b16751:0x69a0412e6b5efa91!8m2!3d28.4492211!4d77.0997688!16s%2Fg%2F11s8_49tls?entry=ttu",
+      },
+    ],
   },
   {
-    id: "4",
+    id: 4,
     title: "Call us",
     icon: IoCallOutline,
     desc: "Mon-Fri from 8am to 5pm.",
-    contact: "+1 (555) 000-0000",
+    contact: [{ id: 1, detail: "0091-9319290418" }],
   },
 ];
 const faqdata = [
@@ -119,7 +133,7 @@ function Page() {
           Let us know how we can help.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {contactdata.map((d) => (
             <div
               key={d.id}
@@ -133,14 +147,19 @@ function Page() {
                 <h3 className=" text-xl font-bold ">{d.title}</h3>
               </div>
               <p className="">{d.desc}</p>
-              <a href="#" className="underline hover:text-white">
+              {/* <a href="#" className="underline hover:text-white">
                 {d.contact}
-              </a>
+              </a> */}
+              {d.contact.map((d) => (
+                <a href={`${d.link}`} className="underline hover:text-white">
+                  {d.detail}
+                </a>
+              ))}
             </div>
           ))}
         </div>
 
-        <h2 className="text-3xl font-bold  mb-4 mt-16  text-center text-white">
+        {/* <h2 className="text-3xl font-bold  mb-4 mt-16  text-center text-white">
           Frequently asked questions
         </h2>
         <div className="lg:px-40">
@@ -151,12 +170,6 @@ function Page() {
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
-                  {/* <Image
-                    src="/info.svg"
-                    alt="Info icon"
-                    width={24}
-                    height={24}
-                  /> */}
                   <h3 className=" text-lg font-bold">{e.ques}</h3>
                 </div>
                 <button
@@ -210,7 +223,7 @@ function Page() {
           >
             Load more
           </button>
-        </div>
+        </div> */}
 
         {/* <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-16">
           Ready to level up your business?

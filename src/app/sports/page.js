@@ -351,9 +351,9 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
               </motion.span>
             ))}
           </motion.span>
-          <span className="relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
+          {/* <span className="relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
             {subheading}
-          </span>
+          </span> */}
         </div>
 
         <motion.img

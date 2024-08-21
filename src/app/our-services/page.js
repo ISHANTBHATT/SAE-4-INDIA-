@@ -131,7 +131,7 @@ const items = [
     id: 1,
     title: "Sports education program ",
     Icon: "../sports_education_icon.png",
-    imgSrc: "../Sports_education_program.jpg",
+    imgSrc: "../Sports_education_program2.jpeg",
     description: `India's sports landscape is rich and diverse, offering coaching in various sports ranging from traditional games to globally recognized ones. A professional team dedicated to sports and education plays a pivotal role in providing top-tier coaching services across multiple disciplines. Here's an overview of some of the sports included in their coaching portfolio: 
      1. Tennis 
      2. Badminton 
@@ -150,7 +150,7 @@ const items = [
     id: 2,
     title: "Professional Coaching Services",
     Icon: "../coaching_icon.png",
-    imgSrc: "../Professional_Coaching_Services.jpg",
+    imgSrc: "../Professional_Coaching_Services2.jpeg",
     description: `The professional team of SAE 4 INDIA dedicated to sports and education offers comprehensive coaching services that go beyond mere physical training. They integrate sports education with academic development, ensuring athletes receive a well-rounded experience. This approach not only fosters athletic excellence but also emphasizes the importance of education in an athlete’s life.
 Coaching programs are designed to:
     • Develop Technical Skills: Through systematic training and expert guidance.

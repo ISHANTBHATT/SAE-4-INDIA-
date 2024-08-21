@@ -115,7 +115,7 @@ function Footer() {
                   <li>
                     <p className="font-bold ">Call Us</p>
                     <a href="#" class="hover:text-primary text-sm">
-                      +91 9999999999
+                      0091-9319290418
                     </a>
                   </li>
                 </div>
@@ -126,9 +126,12 @@ function Footer() {
 
                   <li>
                     <p className="font-bold ">Vist Us</p>
-                    <a href="#" class="hover:text-primary text-sm ">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry
+                    <a
+                      href="https://www.google.com/maps/place/Sports+%26+Education+for+India/@28.4492975,77.095773,16.23z/data=!4m14!1m7!3m6!1s0x390d18b507b16751:0x69a0412e6b5efa91!2sSports+%26+Education+for+India!8m2!3d28.4492211!4d77.0997688!16s%2Fg%2F11s8_49tls!3m5!1s0x390d18b507b16751:0x69a0412e6b5efa91!8m2!3d28.4492211!4d77.0997688!16s%2Fg%2F11s8_49tls?entry=ttu"
+                      class="hover:text-primary text-sm "
+                    >
+                      Sports & Education for India 101, 1st Floor Centrum Plaza,
+                      Golf Course Road, Gurgaon – 122003, Haryana
                     </a>
                   </li>
                 </div>
@@ -139,9 +142,27 @@ function Footer() {
 
                   <li className="flex-col mr-20">
                     <p className="font-bold ">Mail Us</p>
-                    <a href="#" class="hover:text-primary text-sm ">
-                      info@LoremIpsum.com{" "}
-                    </a>
+                    <div className="flex flex-col">
+                      <a
+                        href="mailto:Info@sporteducationindia.com"
+                        class="hover:text-primary text-sm "
+                      >
+                        Info@sporteducationindia.com
+                      </a>
+                      <a
+                        href="mailto:Director@sporteducationindia.com"
+                        class="hover:text-primary text-sm "
+                      >
+                        Director@sporteducationindia.com
+                      </a>
+                      <a
+                        href="mailto:Fusion@sporteducationindia.com"
+                        class="hover:text-primary text-sm "
+                      >
+                        Fusion@sporteducationindia.com
+                      </a>
+                    </div>
+
                     {/* <a href="#" class="hover:underline text-sm ">
                       swati.grover@finchamindia.com
                     </a> */}
@@ -157,12 +178,8 @@ function Footer() {
             Copyright © 2024{" "}
             <a href="" class="hover:underline">
               Sports And Education For India |
-            </a>{" "}
-            Website Developed By{" "}
-            <a href="https://apacedigitalcargo.com/" class="hover:underline">
-              Apace Digital Cargo
-            </a>{" "}
-            | . All Rights Reserved.
+            </a>
+            All Rights Reserved.
           </span>
           <div class="flex mt-4 sm:justify-center sm:mt-0">
             {/* <a href="#" class="text-gray-500 hover:text-gray-900">

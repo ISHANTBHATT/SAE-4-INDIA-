@@ -2,34 +2,32 @@ const feeddata = [
   {
     id: 1,
     video: "../footballclip.mp4",
-    title: "Lorem ipsum dolor sit amet",
-    desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+    title: "Soccer Training",
+    desc: `Soccer training is designed to develop well-rounded players who are skilled, fit, and mentally prepared to perform at their best on the field.`,
   },
   {
     id: 2,
     video: "../kabaddiclip.mp4",
-    title: "Lorem ipsum dolor sit amet",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Kabaddi Training",
+    desc: "Kabaddi training cultivates a sense of camaraderie and mutual respect among players, as they push their limits and celebrate each other's progress.",
   },
   {
     id: 3,
     video: "../footballclip.mp4",
-    title: "Lorem ipsum dolor sit amet",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Soccer Training",
+    desc: "Soccer training is designed to develop well-rounded players who are skilled, fit, and mentally prepared to perform at their best on the field",
   },
   {
     id: 4,
     video: "../kabaddiclip.mp4",
-    title: "Lorem ipsum dolor sit amet",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Kabaddi Training",
+    desc: "Kabaddi training cultivates a sense of camaraderie and mutual respect among players, as they push their limits and celebrate each other's progress.",
   },
   {
     id: 5,
     video: "../footballclip.mp4",
-    title: "Lorem ipsum dolor sit amet",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Soccer Training",
+    desc: `Soccer training is designed to develop well-rounded players who are skilled, fit, and mentally prepared to perform at their best on the field.`,
   },
 ];
 

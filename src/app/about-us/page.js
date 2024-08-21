@@ -1,23 +1,81 @@
-// import React from "react";
-
-// function Page() {
-//   return <div>page</div>;
-// }
-
-// export default Page;
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Card from "../Components/Card";
+// import HorizontalScroll, { Card } from "../Components/HorizontalScroll";
+
+const cards = [
+  {
+    url: "../Honesty.jpeg",
+    title: "Marketing & Sales Experts",
+    id: 1,
+  },
+  {
+    url: "../Learning.jpeg",
+    title: "Physical Education Experts",
+    id: 2,
+  },
+  {
+    url: "../Relationships.jpeg",
+    title: "Physical Fitness Experts",
+    id: 3,
+  },
+  {
+    url: "../Respect.jpeg",
+    title: "Sports-Specific Fitness Training Experts",
+    id: 4,
+  },
+  {
+    url: "../Commitment.jpeg",
+    title: "Sports-Specific Coaching Experts",
+    id: 5,
+  },
+  {
+    url: "../Commitment.jpeg",
+    title: "Sports Psychologists",
+    id: 6,
+  },
+  {
+    url: "../Commitment.jpeg",
+    title: "Physiotherapists",
+    id: 7,
+  },
+  {
+    url: "../Commitment.jpeg",
+    title: "Doctors",
+    id: 8,
+  },
+  {
+    url: "../Commitment.jpeg",
+    title: "Nutritionists",
+    id: 9,
+  },
+  {
+    url: "../Commitment.jpeg",
+    title: "Travel Experts",
+    id: 10,
+  },
+  {
+    url: "../Commitment.jpeg",
+    title: "IT Specialists",
+    id: 11,
+  },
+  // {
+  //   url: "../Commitment.jpeg",
+  //   title: "Marketing & Sales Experts",
+  //   id: 12,
+  // },
+];
 
 const Page = () => {
   return (
     <section
-      className="w-full px-4 py-40 text-zinc-400 bg-[#0a0a0a]"
+      className="w-full px-4 py-40 text-zinc-400 bg-[#0a0a0a] text-center md:text-left"
       style={{
         backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='2' stroke='%2318181b'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`,
       }}
     >
-      <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end md:px-8">
+      <div className="mb-8 flex flex-col items-center justify-between gap-4 md:flex-row md:items-start md:px-8">
         <h2 className="max-w-lg text-4xl font-bold md:text-5xl text-white">
           What We Do
         </h2>
@@ -95,6 +153,30 @@ const Page = () => {
           </div>
         </BounceCard>
       </div>
+      {/* <div className="mt-20 flex flex-col items-center justify-between gap-4 md:flex-row md:items-start md:px-8">
+        <h2 className="max-w-lg text-4xl font-bold md:text-5xl text-white">
+          Who We Are
+        </h2>
+      </div>
+      <div className="px-10 py-8">
+        <p className="">
+          We are a dynamic team of passionate sports professionals, bringing
+          together a wealth of expertise in various fields related to physical
+          education, sports, and wellness. Our team comprises:
+        </p>
+      </div>
+      <div className="flex flex-wrap gap-10 px-10 justify-center">
+        {cards.map((card) => {
+          return <Card card={card} key={card.id} />;
+        })}
+      </div>
+      <div className="px-10 py-8">
+        <p className="">
+          Together, we are dedicated to fostering a love for sports and physical
+          fitness in individuals of all ages, with a particular focus on the
+          youth of today—the future of tomorrow.
+        </p>
+      </div> */}
     </section>
   );
 };

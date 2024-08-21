@@ -64,7 +64,7 @@ const Card = ({ card }) => {
 };
 
 export default HorizontalScroll;
-
+export { Card };
 const cards = [
   {
     url: "../Honesty.jpeg",

@@ -176,21 +176,25 @@ function Sports() {
               exit="hidden"
             >
               <p className="m-auto text-neutral-600 w-[500px] text-justify">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                dummy text ever since the 1500s, when an unknown printer took a
-                galley of type and scrambled it to make a type specimen book.
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                dummy text ever since the 1500s, when an unknown printer took a
-                galley of type and scrambled it to make a type specimen book.
+                We offer a range of services designed to promote physical
+                fitness and sports in schools and communities. Our programs are
+                tailored to meet the unique needs of each client, and we take a
+                holistic approach to health and wellness. Our services include:
               </p>
-              <p className="py-10 m-auto text-neutral-600 w-[500px] text-justify">
+              <br />
+              <ul className="m-auto pl-4 text-neutral-600 w-[500px] text-justify list-disc">
+                <li>Sports Training Campus</li>
+                <li>Cultural Excursions</li>
+                <li>University Visits</li>
+                <li>Physical Education Assessments</li>
+                <li>Customized Fitness Programs</li>
+              </ul>
+              {/* <p className="py-10 m-auto text-neutral-600 w-[500px] text-justify">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry&apos;s standard
                 dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen book.
-              </p>
+              </p> */}
             </motion.div>
           )}
         </div>
