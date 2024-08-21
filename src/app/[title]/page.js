@@ -41,10 +41,10 @@ export default function TitlePage() {
       }}
     >
       <div className="w-full  flex flex-col gap-4">
-        <div className="w-full flex gap-20">
+        <div className="w-full flex flex-col lg:flex-row  gap-20">
           <video
             key={item.video}
-            className="rounded-lg w-[70%]"
+            className="rounded-lg w-full lg:w-[70%]"
             autoPlay
             controls
           >
@@ -93,7 +93,7 @@ export default function TitlePage() {
         <p className="w-full text-3xl font-bold p-4 border-b-4 border-textcolor">
           You May Like
         </p>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
           {sortedfeed.map((e) => (
             <FeedCard
               key={e.id}

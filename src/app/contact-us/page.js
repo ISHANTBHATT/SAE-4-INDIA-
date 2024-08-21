@@ -143,7 +143,7 @@ function Page() {
         <h2 className="text-3xl font-bold  mb-4 mt-16  text-center text-white">
           Frequently asked questions
         </h2>
-        <div className="px-40">
+        <div className="lg:px-40">
           {faqdata.map((e) => (
             <div
               key={e.id}
