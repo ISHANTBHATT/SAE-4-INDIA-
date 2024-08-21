@@ -20,24 +20,6 @@ const HomeCard = ({ key, title, img }) => {
           <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-14 w-14"></div>
         </div>
       )}
-      {/* <motion.img
-        variants={fadeIn("up", 0.1)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        src={img}
-        alt=""
-        className="w-full h-full object-cover absolute top-0 left-0"
-      /> */}
-      {/* <video
-        className="w-full h-full object-cover absolute top-0 left-0"
-        loop
-        autoPlay
-        muted
-      >
-        <source src="../footballclip.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
       <motion.div
         key={img}
         variants={fadeIn("up", 0.1)}
@@ -88,28 +70,7 @@ const HomeCard = ({ key, title, img }) => {
           fitness in individuals of all ages, with a particular focus on the
           youth of today—the future of tomorrow.
         </motion.p>
-
-        {/* <motion.div
-        key={btn}
-          variants={fadeIn("left", 0.8)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          // className='flex absolute bottom-24'
-          >
-            
-        <button
-          type="button"
-          className="bg-transparent hover:bg-white border-white border-2 w-full text-white hover:text-black md:w-auto px-10 py-3 rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
-        >
-            {btn}
-        </button>
-        
-        </motion.div> */}
       </div>
-      {/* <div className='justify-center items-center py-2 md:py-10 w-1/2 h-full hidden md:flex '>
-
-      </div> */}
     </section>
   );
 };

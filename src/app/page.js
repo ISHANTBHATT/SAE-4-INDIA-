@@ -113,7 +113,6 @@
 // }
 "use client";
 import Image from "next/image";
-import Home from "./Components/Home";
 import Sports from "./Components/Sports";
 import HomeCarousel from "./Components/HomeCarousel";
 import Testimonials from "./Components/Testimonials";

@@ -20,9 +20,6 @@ function FeedCard({
     const url = title.replace(/\s+/g, "-").toLowerCase();
     router.push(`../${url}/?id=${encodeURIComponent(id)}`);
   };
-  // const sortedNews = news
-  //   .slice()
-  //   .sort((a, b) => new Date(b.date) - new Date(a.date));
   return (
     <div
       className={`max-w-sm m-14 bg-white border border-gray-200 rounded-lg shadow my-10 ${className}`}

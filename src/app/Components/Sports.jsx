@@ -99,7 +99,6 @@ function Sports() {
   return (
     <div className="w-full h-full flex bg-white py-10">
       <div className="hidden md:flex flex-col flex-1 mt-20 items-center gap-10">
-        {/* <div className=""> */}
         <p className="text-7xl font-extrabold ">Sports</p>
         <div className="w-full  ">
           {currentSport ? (
@@ -168,7 +167,6 @@ function Sports() {
               </motion.p>
             </div>
           ) : (
-            // <img src="../defaulticon.jpg" alt="Default icon" />
             <motion.div
               variants={fadeIn("right", 0.2)}
               initial="hidden"
@@ -189,16 +187,9 @@ function Sports() {
                 <li>Physical Education Assessments</li>
                 <li>Customized Fitness Programs</li>
               </ul>
-              {/* <p className="py-10 m-auto text-neutral-600 w-[500px] text-justify">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                dummy text ever since the 1500s, when an unknown printer took a
-                galley of type and scrambled it to make a type specimen book.
-              </p> */}
             </motion.div>
           )}
         </div>
-        {/* </div> */}
       </div>
       <div className=" flex flex-1 flex-col gap-2 h-screen overflow-y-auto scroll-smooth custom-scrollbar">
         {sportsdata.map((sport) => (

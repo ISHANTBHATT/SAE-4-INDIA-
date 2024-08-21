@@ -6,10 +6,6 @@ import feeddata from "../Components/Feeddata";
 import FeedCard from "../Components/FeedCard";
 export default function TitlePage() {
   const router = useRouter();
-  // const truncateText = (text, maxLength) => {
-  //   if (text.length <= maxLength) return text;
-  //   return text.substring(0, maxLength) + "...";
-  // };
   const handleClick = (title, id) => {
     const url = title.replace(/\s+/g, "-").toLowerCase();
     router.push(`../${url}/?id=${encodeURIComponent(id)}`);

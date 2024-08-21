@@ -194,13 +194,4 @@ Key Elements of FUSION SPEXUN:
 FUSION SPEXUN is more than just a sports training program; it is a comprehensive experience that prepares participants for success both on and off the field, equipping them with the skills, knowledge, and cultural understanding needed to thrive in a globalized world.
 `,
   },
-  // {
-  //   id: 4,
-  //   title: "Grow faster",
-  //   Icon: FiBarChart,
-  //   imgSrc:
-  //     "https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius deserunt quia consectetur aliquid obcaecati voluptatibus quos distinctio natus! Tenetur.",
-  // },
 ];

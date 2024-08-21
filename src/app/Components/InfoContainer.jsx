@@ -133,9 +133,6 @@ const ExampleContent = () => (
         experience highlighted the urgent need for improvement in the existing
         physical education and sports systems within schools.
       </p>
-      {/* <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-        Learn more <FiArrowUpRight className="inline" />
-      </button> */}
     </div>
   </div>
 );
@@ -150,13 +147,6 @@ const ExampleContent2 = () => (
         instilling a strong foundation in physical fitness and sports at a young
         age, we can contribute to building a healthier, more vibrant nation.
       </p>
-      {/* <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
-      </p>
-      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-        Learn more <FiArrowUpRight className="inline" />
-      </button> */}
     </div>
   </div>
 );
@@ -169,13 +159,6 @@ const ExampleContent3 = () => (
         company—we are a community of like-minded individuals who are committed
         to making a difference. Here are the values that guide us:
       </p>
-      {/* <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
-      </p>
-      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-        Learn more <FiArrowUpRight className="inline" />
-      </button> */}
     </div>
   </div>
 );

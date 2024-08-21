@@ -90,15 +90,6 @@ function HomeCarousel() {
         {carouseldata.map((data) => (
           <HomeCard key={data.id} title={data.name} img={data.img} />
         ))}
-        {/* <div>
-          <img src="../badminton.jpg" />
-        </div>
-        <div>
-          <img src="../basketball.jpg" />
-        </div>
-        <div>
-          <img src="../tennis.jpg" />
-        </div> */}
       </Slider>
     </div>
   );

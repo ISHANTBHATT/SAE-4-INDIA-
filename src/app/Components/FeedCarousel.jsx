@@ -7,26 +7,6 @@ import { FaGreaterThan, FaLessThan } from "react-icons/fa6";
 import FeedCard from "./FeedCard";
 import feeddata from "./Feeddata";
 
-// const feeddata = [
-//   {
-//     id: "1",
-//     video: "../footballclip.mp4",
-//     title: "Lorem ipsum dolor sit amet",
-//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//   },
-//   {
-//     id: "2",
-//     video: "../kabaddiclip.mp4",
-//     title: "Lorem ipsum dolor sit amet",
-//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//   },
-//   {
-//     id: "3",
-//     video: "../footballclip.mp4",
-//     title: "Lorem ipsum dolor sit amet",
-//     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//   },
-// ];
 const PrevArrow = ({ onClick }) => {
   return (
     <button

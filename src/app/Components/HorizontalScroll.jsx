@@ -4,17 +4,7 @@ import { useRef } from "react";
 const HorizontalScroll = () => {
   return (
     <div className="bg-primary ">
-      {/* <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
-          Scroll down
-        </span>
-      </div> */}
       <HorizontalScrollCarousel />
-      {/* <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
-          Scroll up
-        </span>
-      </div> */}
     </div>
   );
 };
@@ -91,14 +81,4 @@ const cards = [
     title: "Commitment",
     id: 5,
   },
-  //   {
-  //     url: "/imgs/abstract/6.jpg",
-  //     title: "What We Do",
-  //     id: 6,
-  //   },
-  //   {
-  //     url: "/imgs/abstract/7.jpg",
-  //     title: "Title 7",
-  //     id: 7,
-  //   },
 ];

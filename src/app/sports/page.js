@@ -8,7 +8,6 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
-import { SiSpacex } from "react-icons/si";
 import { FiArrowRight, FiMapPin } from "react-icons/fi";
 import { useRef } from "react";
 import Image from "next/image";
@@ -19,10 +18,9 @@ export default function SmoothScrollHero() {
       <ReactLenis
         root
         options={{
-          // Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
           lerp: 0.05,
-          //   infinite: true,
-          //   syncTouch: true,
+          // infinite: true,
+          // syncTouch: true,
         }}
       >
         <Nav />
@@ -36,7 +34,6 @@ export default function SmoothScrollHero() {
 const Nav = () => {
   return (
     <nav className="fixed  right-0 top-16 z-20 flex items-center justify-between px-6 py-3 text-white">
-      {/* <SiSpacex className="text-3xl mix-blend-difference" /> */}
       <button
         onClick={() => {
           document.getElementById("launch-schedule")?.scrollIntoView({
@@ -176,13 +173,6 @@ const Schedule = () => {
       >
         Sports
       </motion.h1>
-      {/* <ScheduleItem title="NG-21" date="Dec 9th" location="Florida" />
-      <ScheduleItem title="Starlink" date="Dec 20th" location="Texas" />
-      <ScheduleItem title="Starlink" date="Jan 13th" location="Florida" />
-      <ScheduleItem title="Turksat 6A" date="Feb 22nd" location="Florida" />
-      <ScheduleItem title="NROL-186" date="Mar 1st" location="California" />
-      <ScheduleItem title="GOES-U" date="Mar 8th" location="California" />
-      <ScheduleItem title="ASTRA 1P" date="Apr 8th" location="Texas" /> */}
       <Link
         heading="Football"
         subheading="Learn what we do here"
@@ -259,26 +249,6 @@ const Schedule = () => {
   );
 };
 
-// const ScheduleItem = ({ title, date, location }) => {
-//   return (
-//     <motion.div
-//       initial={{ y: 48, opacity: 0 }}
-//       whileInView={{ y: 0, opacity: 1 }}
-//       transition={{ ease: "easeInOut", duration: 0.75 }}
-//       className="mb-9 flex items-center justify-between border-b border-zinc-800 px-3 pb-9"
-//     >
-//       <div>
-//         <p className="mb-1.5 text-xl text-zinc-50">{title}</p>
-//         <p className="text-sm uppercase text-zinc-500">{date}</p>
-//       </div>
-//       <div className="flex items-center gap-1.5 text-end text-sm uppercase text-zinc-500">
-//         <p>{location}</p>
-//         <FiMapPin />
-//       </div>
-//     </motion.div>
-//   );
-// };
-
 const Link = ({ heading, imgSrc, subheading, href }) => {
   const ref = useRef(null);
 
@@ -314,9 +284,6 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
       transition={{ ease: "easeInOut", duration: 0.75 }}
     >
       <motion.a
-        //   initial={{ y: 48, opacity: 0 }}
-        //   whileInView={{ y: 0, opacity: 1 }}
-        //   transition={{ ease: "easeInOut", duration: 0.75 }}
         href={href}
         ref={ref}
         onMouseMove={handleMouseMove}
