@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Card from "../Components/Card";
-// import HorizontalScroll, { Card } from "../Components/HorizontalScroll";
 
 const cards = [
   {

@@ -9,7 +9,6 @@ import {
   IoCallOutline,
   IoChatbubblesOutline,
 } from "react-icons/io5";
-import { M_PLUS_1 } from "next/font/google";
 const contactdata = [
   {
     id: 1,
@@ -151,7 +150,11 @@ function Page() {
                 {d.contact}
               </a> */}
               {d.contact.map((d) => (
-                <a href={`${d.link}`} className="underline hover:text-white">
+                <a
+                  key={d.id}
+                  href={`${d.link}`}
+                  className="underline hover:text-white"
+                >
                   {d.detail}
                 </a>
               ))}
