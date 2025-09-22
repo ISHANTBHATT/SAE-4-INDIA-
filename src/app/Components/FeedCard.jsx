@@ -20,9 +20,13 @@ function FeedCard({
     const url = title.replace(/\s+/g, "-").toLowerCase();
     router.push(`../${url}/?id=${encodeURIComponent(id)}`);
   };
+  // const handleClick = (title, id) => {
+  //   const url = title.replace(/\s+/g, "-").toLowerCase();
+  //   router.push(`${url}.html`);
+  // };
   return (
     <div
-      className={`max-w-sm m-14 bg-white border border-gray-200 rounded-lg shadow my-10 ${className}`}
+      className={`max-w-sm mx-8 bg-white border border-gray-200 rounded-lg shadow my-10 ${className}`}
     >
       <a onClick={() => handleClick(title, id)}>
         <video className="rounded-t-lg cursor-pointer" loop autoPlay muted>

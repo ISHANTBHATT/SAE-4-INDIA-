@@ -22,9 +22,9 @@ const HomeCard = ({ key, title, img }) => {
       )}
       <motion.div
         key={img}
-        variants={fadeIn("up", 0.1)}
+        // variants={fadeIn("up", 0.1)}
         initial="hidden"
-        animate="show"
+        whileInView="show"
         exit="hidden"
         className="w-full h-full absolute top-0 left-0"
       >
@@ -36,12 +36,21 @@ const HomeCard = ({ key, title, img }) => {
           className="w-full h-full"
         />
       </motion.div>
+      {/* <motion.img
+        variants={fadeIn("up", 0.1)}
+        initial="hidden"
+        whileInView="show"
+        exit="hidden"
+        src={img}
+        alt=""
+        className="w-full h-full object-cover absolute top-0 left-0"
+      /> */}
       <div className="px-4 lg:px-4  py-0 lg:py-20 flex-1 flex flex-col z-[1] absolute left-0 bottom-10">
         <motion.p
           key={title}
-          variants={fadeIn("right", 0.2)}
+          variants={fadeIn("down", 1)}
           initial="hidden"
-          animate="show"
+          whileInView="show"
           exit="hidden"
           className="text-[50px]  lg:text-[100px] font-extrabold text-white w-full font-harlow"
         >
@@ -49,9 +58,9 @@ const HomeCard = ({ key, title, img }) => {
         </motion.p>
         <motion.p
           key={title}
-          variants={fadeIn("right", 0.6)}
+          variants={fadeIn("left", 2)}
           initial="hidden"
-          animate="show"
+          whileInView="show"
           exit="hidden"
           className="text-[50px]  lg:text-[100px] font-extrabold text-white w-full font-harlow"
         >
@@ -60,9 +69,9 @@ const HomeCard = ({ key, title, img }) => {
 
         <motion.p
           key={key}
-          variants={fadeIn("right", 0.4)}
+          variants={fadeIn("up", 2.4)}
           initial="hidden"
-          animate="show"
+          whileInView="show"
           exit="hidden"
           className="text-sm md:text-lg text-textColor text-left text-white w-[50%] md:w-[40%]"
         >

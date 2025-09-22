@@ -2,68 +2,68 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const cards = [
-  {
-    url: "../Honesty.jpeg",
-    title: "Marketing & Sales Experts",
-    id: 1,
-  },
-  {
-    url: "../Learning.jpeg",
-    title: "Physical Education Experts",
-    id: 2,
-  },
-  {
-    url: "../Relationships.jpeg",
-    title: "Physical Fitness Experts",
-    id: 3,
-  },
-  {
-    url: "../Respect.jpeg",
-    title: "Sports-Specific Fitness Training Experts",
-    id: 4,
-  },
-  {
-    url: "../Commitment.jpeg",
-    title: "Sports-Specific Coaching Experts",
-    id: 5,
-  },
-  {
-    url: "../Commitment.jpeg",
-    title: "Sports Psychologists",
-    id: 6,
-  },
-  {
-    url: "../Commitment.jpeg",
-    title: "Physiotherapists",
-    id: 7,
-  },
-  {
-    url: "../Commitment.jpeg",
-    title: "Doctors",
-    id: 8,
-  },
-  {
-    url: "../Commitment.jpeg",
-    title: "Nutritionists",
-    id: 9,
-  },
-  {
-    url: "../Commitment.jpeg",
-    title: "Travel Experts",
-    id: 10,
-  },
-  {
-    url: "../Commitment.jpeg",
-    title: "IT Specialists",
-    id: 11,
-  },
-  // {
-  //   url: "../Commitment.jpeg",
-  //   title: "Marketing & Sales Experts",
-  //   id: 12,
-  // },
-];
+// const cards = [
+//   {
+//     url: "../Honesty.jpeg",
+//     title: "Marketing & Sales Experts",
+//     id: 1,
+//   },
+//   {
+//     url: "../Learning.jpeg",
+//     title: "Physical Education Experts",
+//     id: 2,
+//   },
+//   {
+//     url: "../Relationships.jpeg",
+//     title: "Physical Fitness Experts",
+//     id: 3,
+//   },
+//   {
+//     url: "../Respect.jpeg",
+//     title: "Sports-Specific Fitness Training Experts",
+//     id: 4,
+//   },
+//   {
+//     url: "../Commitment.jpeg",
+//     title: "Sports-Specific Coaching Experts",
+//     id: 5,
+//   },
+//   {
+//     url: "../Commitment.jpeg",
+//     title: "Sports Psychologists",
+//     id: 6,
+//   },
+//   {
+//     url: "../Commitment.jpeg",
+//     title: "Physiotherapists",
+//     id: 7,
+//   },
+//   {
+//     url: "../Commitment.jpeg",
+//     title: "Doctors",
+//     id: 8,
+//   },
+//   {
+//     url: "../Commitment.jpeg",
+//     title: "Nutritionists",
+//     id: 9,
+//   },
+//   {
+//     url: "../Commitment.jpeg",
+//     title: "Travel Experts",
+//     id: 10,
+//   },
+//   {
+//     url: "../Commitment.jpeg",
+//     title: "IT Specialists",
+//     id: 11,
+//   },
+//   // {
+//   //   url: "../Commitment.jpeg",
+//   //   title: "Marketing & Sales Experts",
+//   //   id: 12,
+//   // },
+// ];
 
 const Page = () => {
   return (

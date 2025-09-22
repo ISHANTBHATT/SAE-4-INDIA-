@@ -91,7 +91,7 @@ const CenterImage = () => {
         clipPath,
         backgroundSize,
         opacity,
-        backgroundImage: "url(../basketball.jpg)",
+        backgroundImage: "url(/basketball.jpg)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
@@ -103,28 +103,28 @@ const ParallaxImages = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-[200px]">
       <ParallaxImg
-        src="../swimming.jpg"
+        src="/swimming.jpg"
         alt="football"
         start={-200}
         end={200}
         className="w-1/3"
       />
       <ParallaxImg
-        src="../football2.jpg"
+        src="/football2.jpg"
         alt="An example of a space launch"
         start={200}
         end={-250}
         className="mx-auto w-2/3"
       />
       <ParallaxImg
-        src="../chess.webp"
+        src="/chess.webp"
         alt="Orbiting satellite"
         start={-200}
         end={200}
         className="ml-auto w-1/3"
       />
       <ParallaxImg
-        src="../tennis.jpg"
+        src="/tennis.jpg"
         alt="Orbiting satellite"
         start={0}
         end={-500}
@@ -176,73 +176,73 @@ const Schedule = () => {
       <Link
         heading="Football"
         subheading="Learn what we do here"
-        imgSrc="../football.jpg"
+        imgSrc="/football.jpg"
         href="#"
       />
       <Link
         heading="Basketball"
         subheading="We work with great people"
-        imgSrc="../basketball2.jpg"
+        imgSrc="/basketball2.jpg"
         href="#"
       />
       <Link
         heading="Tennis"
         subheading="Our work speaks for itself"
-        imgSrc="../tennis3.jpg"
+        imgSrc="/tennis3.jpg"
         href="#"
       />
       <Link
         heading="Badminton"
         subheading="We want cool people"
-        imgSrc="../badminton.jpg"
+        imgSrc="/badminton.jpg"
         href="#"
       />
       <Link
         heading="Kayaking and Canoeing"
         subheading="Incase you're bored"
-        imgSrc="../Kayakingandcanoeing2.jpg"
+        imgSrc="/Kayakingandcanoeing2.jpg"
         href="#"
       />
       <Link
         heading="Dragon Boat Racing"
         subheading="Incase you're bored"
-        imgSrc="../dragonboatracing.webp"
+        imgSrc="/dragonboatracing.webp"
         href="#"
       />
       <Link
         heading="Judo"
         subheading="Incase you're bored"
-        imgSrc="../judo2.jpg"
+        imgSrc="/judo2.jpg"
         href="#"
       />
       <Link
         heading="Taekwondo"
         subheading="Incase you're bored"
-        imgSrc="../taekwondo.jpg"
+        imgSrc="/taekwondo.jpg"
         href="#"
       />
       <Link
         heading="Kabaddi"
         subheading="Incase you're bored"
-        imgSrc="../kabaddi3.webp"
+        imgSrc="/kabaddi3.webp"
         href="#"
       />
       <Link
         heading="Squash"
         subheading="Incase you're bored"
-        imgSrc="../squash.jpg"
+        imgSrc="/squash.jpg"
         href="#"
       />
       <Link
         heading="Chess"
         subheading="Incase you're bored"
-        imgSrc="../chess.webp"
+        imgSrc="/chess.webp"
         href="#"
       />
       <Link
         heading="Swimming"
         subheading="Incase you're bored"
-        imgSrc="../swimming.jpg"
+        imgSrc="/swimming.jpg"
         href="#"
       />
     </section>
@@ -322,7 +322,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             {subheading}
           </span> */}
         </div>
-
+        {/* 
         <motion.img
           style={{
             top,
@@ -338,8 +338,8 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
           src={imgSrc}
           className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
           alt={`Image representing a link for ${heading}`}
-        />
-        {/* <motion.div
+        /> */}
+        <motion.div
           style={{
             top,
             left,
@@ -351,17 +351,19 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             whileHover: { scale: 1, rotate: "12.5deg" },
           }}
           transition={{ type: "spring" }}
-          className=" h-24 w-32 z-0 rounded-lg last:absolute  md:h-48 md:w-64"
+          className=" h-24 w-32 z-0 rounded-lg absolute  md:h-48 md:w-64"
         >
           <Image
-            src="/football.jpg"
-            layout="fill"
+            src={imgSrc}
+            // layout="fill"
+            width={256}
+            height={192}
             objectFit="cover"
             // className="w-full h-full"
             className="w-full h-full "
             alt={`Image representing a link for ${heading}`}
           />
-        </motion.div> */}
+        </motion.div>
         <motion.div
           variants={{
             initial: {

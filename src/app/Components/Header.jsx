@@ -33,10 +33,12 @@ export default function Header() {
         }`}
       >
         <a href="/" className="hidden max-lg:block">
-          <img src="../SAE4INDIA_logo3.png" alt="logo" className=" w-24" />
-          {/* <img src="../testlogo.png" alt="logo" className="w-36" /> */}
+          {/* <img src="SAE4INDIA_logo3.png" alt="logo" className=" w-24" /> */}
+          <img src="testlogo.png" alt="logo" className="w-36" />
         </a>
-
+        {/* <a href="/" className="hidden max-lg:block">
+          <img src="../testlogo.png" alt="logo" className="w-36" />
+        </a> */}
         <div
           id="collapseMenu"
           className={`w-full max-lg:hidden lg:!block  max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50`}
@@ -51,7 +53,7 @@ export default function Header() {
               </li>
               <li className="max-lg:border-b max-lg:py-3">
                 <a
-                  href="../about-us"
+                  href="/about-us"
                   className="group relative font-bold text-sm"
                 >
                   ABOUT
@@ -60,7 +62,7 @@ export default function Header() {
               </li>
               <li className="max-lg:border-b max-lg:py-3">
                 <a
-                  href="../our-services"
+                  href="/our-services"
                   className="group relative font-bold text-sm"
                 >
                   SERVICES
@@ -69,27 +71,29 @@ export default function Header() {
               </li>
             </ul>
 
-            <a
+            {/* <a
               href="/"
               className="m-auto absolute lg:left-2/4 lg:top-0 lg:-translate-x-1/2 max-lg:hidden"
             >
-              <img src="../SAE4INDIA_logo3.png" alt="logo" className=" w-32" />
-              {/* <img src="../testlogo.png" alt="logo" className="w-36" /> */}
+              <img src="SAE4INDIA_logo3.png" alt="logo" className=" w-32" />
+              <img src="testlogo.png" alt="logo" className="w-36" />
+            </a> */}
+            <a
+              href=""
+              className="m-auto absolute lg:left-2/4 lg:top-1/4 lg:-translate-x-1/2 max-lg:hidden"
+            >
+              <img src="/testlogo.png" alt="logo" className="w-36" />
             </a>
-
             <ul className="lg:flex lg:space-x-8 max-lg:space-y-2 max-lg:mt-2 ml-auto">
               <li className="max-lg:border-b max-lg:py-3">
-                <a
-                  href="../sports"
-                  className="group relative font-bold text-sm"
-                >
+                <a href="/sports" className="group relative font-bold text-sm">
                   SPORTS
                   <Underline />
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:py-3">
                 <a
-                  href="../live-feed"
+                  href="/live-feed"
                   className="group relative font-bold text-sm"
                 >
                   LIVE FEED
@@ -98,7 +102,7 @@ export default function Header() {
               </li>
               <li className="max-lg:py-3 relative">
                 <a
-                  href="../contact-us"
+                  href="/contact-us"
                   className="group relative font-bold text-sm"
                 >
                   CONTACT US
@@ -126,7 +130,8 @@ export default function Header() {
         <DialogPanel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-primary px-10 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex justify-between">
             <a href="/" className="-m-1.5 p-1.5">
-              <img alt="" src="../SAE4INDIA_logo3.png" className="w-24" />
+              {/* <img alt="" src="SAE4INDIA_logo3.png" className="w-24" /> */}
+              <img src="testlogo.png" alt="logo" className="w-36" />
             </a>
             <button
               type="button"
@@ -140,37 +145,37 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 ">
                 <a
-                  href="../"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-zinc-900"
                 >
                   Home
                 </a>
                 <a
-                  href="../about-us"
+                  href="/about-us"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-zinc-900"
                 >
                   About
                 </a>
                 <a
-                  href="../sports"
+                  href="/sports"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-zinc-900"
                 >
                   Sports
                 </a>
                 <a
-                  href="../our-services"
+                  href="/our-services"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-zinc-900"
                 >
                   Services
                 </a>
                 <a
-                  href="../live-feed"
+                  href="/live-feed"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-zinc-900"
                 >
                   Live Feed
                 </a>
                 <a
-                  href="../contact-us"
+                  href="/contact-us"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-zinc-900"
                 >
                   Contact Us

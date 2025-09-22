@@ -8,7 +8,7 @@ import HomeCard from "./HomeCard";
 const carouseldata = [
   { id: "1", img: "/basketball.jpg", name: "BASKETBALL" },
   { id: "2", img: "/tennis6.jpg", name: "TENNIS" },
-  { id: "3", img: "/taekwondo.jpg", name: "TAEKWONDO" },
+  { id: "3", img: "/football5.jpg", name: "FOOTBALL" },
 ];
 const PrevArrow = ({ onClick }) => {
   return (

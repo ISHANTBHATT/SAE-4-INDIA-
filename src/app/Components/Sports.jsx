@@ -10,7 +10,7 @@ const sportsdata = [
     id: "1",
     name: "Tennis",
     img: "/tennis5.jpg",
-    icon: "/tennisicon.jpg",
+    icon: "/tennisicon.png",
     desc: "Tennis is a popular sport in India, and professional coaching emphasizes technique, endurance, and strategy. The coaching programs are designed to cater to all levels, from beginners to advanced players. Coaches focus on improving stroke mechanics, footwork, mental toughness, and match play, ensuring athletes are well-prepared for competitive tennis.",
   },
   {
@@ -24,21 +24,21 @@ const sportsdata = [
     id: "3",
     name: "Football",
     img: "/football4.webp",
-    icon: "/footballicon.jpg",
+    icon: "/footballicon.png",
     desc: "Football in India is growing rapidly, and coaching programs are designed to nurture talent from grassroots to professional levels. The focus is on developing technical skills, tactical understanding, physical conditioning, and teamwork. The professional team ensures that athletes are exposed to modern training methodologies and competitive match experience.",
   },
   {
     id: "4",
     name: "Basketball",
     img: "/basketball4.webp",
-    icon: "/basketballicon.jpg",
+    icon: "/basketballicon.png",
     desc: "Basketball coaching in India aims to build the next generation of athletes capable of competing at both national and international levels. The training programs focus on improving ball-handling skills, shooting accuracy, defensive strategies, and physical fitness. Coaches emphasize teamwork, quick decision-making, and game intelligence.",
   },
   {
     id: "5",
     name: "Kayaking and Canoeing",
     img: "/Kayakingandcanoeing.jpg",
-    icon: "/Kayakingandcanoeingicon.jpg",
+    icon: "/Kayakingandcanoeingicon.png",
     desc: "Water sports like kayaking and canoeing require specialized training to master. The coaching includes learning various paddling techniques, improving endurance, and understanding water dynamics. The programs also cover safety measures and race strategies to prepare athletes for national and international competitions.",
   },
   {
@@ -73,7 +73,7 @@ const sportsdata = [
     id: "10",
     name: "Squash",
     img: "/squash2.jpg",
-    icon: "/squashicon.jpg",
+    icon: "/squashicon.png",
     desc: "Squash is a fast-paced racket sport that requires excellent reflexes and strategic play. Coaching programs focus on improving footwork, shot accuracy, and game tactics. Conditioning drills and match play are integral parts of the training, aimed at preparing athletes for competitive squash.",
   },
   {
@@ -87,7 +87,7 @@ const sportsdata = [
     id: "12",
     name: "Swimming",
     img: "/swimming.jpg",
-    icon: "/swimmingicon.jpg",
+    icon: "/swimmingicon.png",
     desc: "Swimming coaching involves perfecting techniques in different strokes (freestyle, backstroke, breaststroke, and butterfly) and improving endurance. The programs also cover aspects like breathing techniques, starts, and turns. Swimmers are trained to compete at various levels, from school competitions to national championships.",
   },
 ];
@@ -98,9 +98,24 @@ function Sports() {
   const currentSport = sportsdata.find((sport) => sport.name === hoveredSport);
   return (
     <div className="w-full h-full flex bg-white py-10">
-      <div className="hidden md:flex flex-col flex-1 mt-20 items-center gap-10">
-        <p className="text-7xl font-extrabold ">Sports</p>
-        <div className="w-full  ">
+      <div
+        className="hidden md:flex flex-col flex-1 pt-20 items-center gap-10 relative"
+        // style={{
+        //   backgroundImage: 'url("backgound.png")',
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        //   backgroundRepeat: "no-repeat",
+        // }}
+      >
+        <Image
+          src="/backgound2.png"
+          alt=""
+          layout="fill"
+          objectFit="cover"
+          className="absolute inset-0 z-0"
+        />
+        <p className="text-7xl font-extrabold z-[1]">Sports</p>
+        <div className="w-full z-[1] ">
           {currentSport ? (
             // <div className=" flex ">
             //   {/* <motion.img
@@ -142,9 +157,12 @@ function Sports() {
             // </div>
             <div className="flex">
               <motion.div
-                variants={fadeIn("left", 0.2)}
+                // variants={fadeIn("left", 0.2)}
+                // initial="hidden"
+                // animate="show"
+                // exit="hidden"
                 initial="hidden"
-                animate="show"
+                animate={{ rotate: [0, 360] }}
                 exit="hidden"
                 className="w-96 h-96"
               >
@@ -155,6 +173,11 @@ function Sports() {
                   height={384}
                   className="w-full h-full "
                 />
+                {/* <img
+                  src={currentSport.icon}
+                  alt={`${currentSport.name} icon`}
+                  className="w-full h-full "
+                /> */}
               </motion.div>
               <motion.p
                 variants={fadeIn("right", 0.2)}
@@ -170,7 +193,7 @@ function Sports() {
             <motion.div
               variants={fadeIn("right", 0.2)}
               initial="hidden"
-              animate="show"
+              whileInView="show"
               exit="hidden"
             >
               <p className="m-auto text-neutral-600 w-[500px] text-justify">

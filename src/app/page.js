@@ -118,6 +118,7 @@ import HomeCarousel from "./Components/HomeCarousel";
 import Testimonials from "./Components/Testimonials";
 import InfoContainer from "./Components/InfoContainer";
 import FeedCarousel from "./Components/FeedCarousel";
+import Bounceball from "./Components/Bounceball";
 export default function page() {
   return (
     <main className="w-full min-h-screen mb-10">
@@ -126,6 +127,7 @@ export default function page() {
       <InfoContainer />
       <FeedCarousel />
       <Testimonials />
+      {/* <Bounceball /> */}
     </main>
   );
 }

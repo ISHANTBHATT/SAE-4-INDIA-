@@ -11,12 +11,12 @@ import {
 } from "framer-motion";
 import { wrap } from "@motionone/utils";
 const partnersdata = [
-  { id: "1", logo: "../Streetracket_Logo2.png", name: "Streetracket" },
-  { id: "2", logo: "../Tipsarevic_logo.png", name: "Tipsarevic" },
-  { id: "3", logo: "../Top_tennis_academy.png", name: "Top tennis academy" },
-  { id: "4", logo: "../tenalis_sports.png", name: "Tenalis sports" },
-  { id: "5", logo: "../speedball.png", name: "Speedball" },
-  { id: "6", logo: "../yellowfields_logo.png", name: "Yellow Fields" },
+  { id: "1", logo: "/Streetracket_Logo2.png", name: "Streetracket" },
+  { id: "2", logo: "/Tipsarevic_logo.png", name: "Tipsarevic" },
+  { id: "3", logo: "/Top_tennis_academy.png", name: "Top tennis academy" },
+  { id: "4", logo: "/tenalis_sports.png", name: "Tenalis sports" },
+  { id: "5", logo: "/speedball.png", name: "Speedball" },
+  { id: "6", logo: "/yellowfields_logo.png", name: "Yellow Fields" },
 ];
 
 function ParallaxText({ children, baseVelocity = 100 }) {

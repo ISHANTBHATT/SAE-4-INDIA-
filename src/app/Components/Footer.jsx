@@ -11,20 +11,21 @@ function Footer() {
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between md:gap-10 xl:gap-24">
           <div className="mb-6 md:mb-0 ">
-            <a href="../" class="flex justify-center">
+            <a href="/" class="flex justify-center">
               {/* <img src="../testlogo.png" class="h-12 me-3 mt-10" alt="Logo" /> */}
               <img
-                src="../SAE4INDIA_logo3.png"
+                src="/SAE4INDIA_logo3.png"
                 class="h-28 me-3 mt-10"
                 alt="Logo"
               />
             </a>
             <p class="self-center text-sm mt-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry
+              SAE 4 INDIA commitment to sports coaching across a wide array of
+              disciplines is evident through the professional teams dedicated to
+              developing the next generation of athletes.
             </p>
           </div>
-          <div class="grid grid-cols-2  sm:grid-cols-4 md:px-20 xl:px-0">
+          <div class="grid grid-cols-2  sm:grid-cols-3 md:px-20 xl:px-0">
             <div>
               <h2 class="mb-6 text-sm font-semibold  uppercase">Quick Links</h2>
               <ul class="text-gray-500 font-medium">
@@ -34,33 +35,33 @@ function Footer() {
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary ">
-                  <a href="../about-us" class="">
+                  <a href="/about-us" class="">
                     About Us
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary ">
-                  <a href="../our-services" class="">
+                  <a href="/our-services" class="">
                     Services
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary ">
-                  <a href="../sports" class="">
+                  <a href="/sports" class="">
                     Sports
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary ">
-                  <a href="../live-feed" class="">
+                  <a href="/live-feed" class="">
                     Live Feed
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary ">
-                  <a href="../contact-us" class="">
+                  <a href="/contact-us" class="">
                     Contact Us
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h2 class="mb-6 text-sm font-semibold  uppercase">Follow us</h2>
               <ul class="text-gray-500 font-medium">
                 <li class="mb-4 hover:text-primary">
@@ -74,30 +75,30 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  {/* <a href="https://www.linkedin.com/company/fincham-india/" class="hover:underline">Linkedin</a> */}
-                  {/* <a href="" class="hover:underline">
+                  <a href="https://www.linkedin.com/company/fincham-india/" class="hover:underline">Linkedin</a>
+                  <a href="" class="hover:underline">
                     <img src="../LinkedIn_Logo.png" className="w-20" />
-                  </a> */}
+                  </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div>
               <h2 class="mb-6 text-sm font-semibold  uppercase">
                 OUR SERVICES
               </h2>
               <ul class="text-gray-500 font-medium">
                 <li class="mb-4 hover:text-primary">
-                  <a href="../our-services" class="">
+                  <a href="/our-services" class="">
                     Sports education program
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary">
-                  <a href="../our-services" class="">
+                  <a href="/our-services" class="">
                     Professional Coaching
                   </a>
                 </li>
                 <li className="mb-4 hover:text-primary">
-                  <a href="../our-services" class="">
+                  <a href="/our-services" class="">
                     Fusion Spexun
                   </a>
                 </li>
@@ -114,7 +115,7 @@ function Footer() {
                   </div>
                   <li>
                     <p className="font-bold ">Call Us</p>
-                    <a href="#" class="hover:text-primary text-sm">
+                    <a href="/" class="hover:text-primary text-sm">
                       0091-9319290418
                     </a>
                   </li>
@@ -145,7 +146,7 @@ function Footer() {
                     <div className="flex flex-col">
                       <a
                         href="mailto:Info@sporteducationindia.com"
-                        class="hover:text-primary text-sm "
+                        class="hover:text-primary text-sm"
                       >
                         Info@sporteducationindia.com
                       </a>
@@ -168,28 +169,25 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-4" />
         <div class="sm:flex sm:items-center sm:justify-between text-center">
           <span class="text-sm text-gray-500 sm:text-center">
             Copyright © 2024{" "}
             <a href="" class="hover:underline">
               Sports And Education For India |
-            </a>
+            </a>{" "}
             All Rights Reserved.
           </span>
           <div class="flex mt-4 sm:justify-center sm:mt-0">
             {/* <a href="#" class="text-gray-500 hover:text-gray-900">
                   <span class="sr-only">Facebook page</span>
               </a> */}
-            {/* <a href="#" class="text-gray-500 hover:text-gray-900 ms-5">
-                 <FaSquareXTwitter />
-                  <span class="sr-only">Twitter page</span>
-              </a> */}
-            <a
-              href="#"
-              class="text-gray-500 hover:text-gray-900 ms-5 sm:flex hidden"
-            >
-              <FaLinkedin />
+            <a href="" class="text-gray-500 hover:text-white ms-5">
+              <FaSquareXTwitter className="w-6 h-6" />
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a href="" class="text-gray-500 hover:text-white ms-5">
+              <FaLinkedin className="w-6 h-6" />
               <span class="sr-only">Linkedin page</span>
             </a>
           </div>

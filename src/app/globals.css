@@ -29,3 +29,20 @@
   border-top-color: #3498db;
   animation: spin 1s linear infinite;
 }
+
+@keyframes bounce-sideways {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px); 
+  }
+}
+
+.bounce-sideways {
+  animation: bounce-sideways 1s infinite;
+}
+
+.hover\:bounce-sideways:hover {
+  animation: bounce-sideways 1s infinite;
+}
